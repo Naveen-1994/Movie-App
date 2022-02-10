@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import ConfigureStore from './configure-store/configureStore'
 import { Provider } from 'react-redux'
+import 'bootstrap/dist/css/bootstrap.css';
 
 const store = ConfigureStore()
 

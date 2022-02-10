@@ -8,9 +8,9 @@ const MovieList = () => {
     })
     console.log(movies)
     return (
-        <div>
-            <h2>Movie list</h2>
-            <MovieCard movies={movies} />
+        <div className="col-md-6">
+            <h3 className="ms-3">Movie list</h3>
+            <MovieCard />
         </div>
     )
 }

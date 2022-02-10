@@ -24,16 +24,19 @@ const MovieForm = () => {
         setMovie('')
         setRating('')
         dispatch(addmovie(res))
+        // console.log(res)
     }
 
     return (
-        <div>
-            <h2>Add Movie</h2>
-            <form onSubmit={handlesubmit}>
-                <input type="text" value={movie} onChange={handlemovie} placeholder='Enter Movie Name'></input> <br />
-                <input type="text" value={rating} onChange={handlerating} placeholder='Enter IMDB Rating'></input> <br />
-                <input type="submit" />
-            </form>
+        <div className="row">
+            <div className="col-md-4">
+                <h3>Add Movie</h3>
+                <form onSubmit={handlesubmit} className="mb-3 ms-2">
+                    <input type="text" value={movie} onChange={handlemovie} placeholder='Enter Movie Name' className="form-control"></input> <br />
+                    <input type="text" value={rating} onChange={handlerating} placeholder='Enter IMDB Rating' className="form-control"></input> <br />
+                    <input type="submit" className="btn btn-info" />
+                </form>
+            </div>
         </div>
     )
 }
