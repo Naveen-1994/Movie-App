@@ -20,12 +20,13 @@ const MovieStats = () => {
     }
 
     return (
-        <div>
-            <div>
-                <h3>Movie Stats</h3>
+        <div className="row pt-2">
+            <div className="col-md-6 border">
+                <h3 className="text-info">Movie Stats</h3>
                 <div className="ms-2">
-                    <h4>Total Movies: {movies.length}</h4>
-                    <h4>Top Ranked Movie: {topRank(movies)}</h4>
+                    <h4 className="text-dark-70">Total Movies: {movies.length}</h4>
+                    <h4 className="text-black-50">Top Ranked Movie:</h4>
+                    <p><b>#{topRank(movies).toUpperCase()}</b></p>
                 </div>
             </div>
         </div>

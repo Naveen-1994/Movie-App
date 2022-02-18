@@ -7,11 +7,11 @@ const MovieContainer = () => {
 
     return (
         <div className="row">
-            <h2 className="m-2">My Movie Lists</h2>
-            <div className="col-md-6">
+            <h2 className="m-2 text-primary">My Movie Lists</h2>
+            <div className="col-md-6 border me-2">
                 <MovieList />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-5">
                 <MovieForm />
                 <MovieStats />
             </div>

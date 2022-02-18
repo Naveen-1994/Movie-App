@@ -29,7 +29,7 @@ const MovieForm = () => {
 
     return (
         <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-6 border">
                 <h3>Add Movie</h3>
                 <form onSubmit={handlesubmit} className="mb-3 ms-2">
                     <input type="text" value={movie} onChange={handlemovie} placeholder='Enter Movie Name' className="form-control"></input> <br />

@@ -11,6 +11,9 @@ const MovieReducers = (state = initialvalue, action) => {
                 return movie.id != action.payload
             })
         }
+        case "original": {
+            return [...state]
+        }
         default: {
             return state
         }

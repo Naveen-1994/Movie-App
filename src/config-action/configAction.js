@@ -11,3 +11,10 @@ export const deletemovie = (id) => {
         payload: id
     }
 }
+
+export const tempadd = (movies) => {
+    return {
+        type: "original",
+        payload: movies
+    }
+}
